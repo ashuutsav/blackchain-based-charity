@@ -1,0 +1,22 @@
+[
+  {
+    "inputs": [],
+    "name": "donateToCharity",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "amountHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "FundsDonated",
+    "type": "event"
+  }
+]
