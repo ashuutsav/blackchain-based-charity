@@ -37,6 +37,20 @@
     "type": "event"
   },
   {
+    "inputs": [],
+    "name": "donateToCampaign",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "endCampaign",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
     "anonymous": false,
     "inputs": [
       {
@@ -54,6 +68,38 @@
     ],
     "name": "FundsDonated",
     "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "setZero",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deadline",
+        "type": "uint256"
+      }
+    ],
+    "name": "startCampaign",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawCampaignFunds",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
   },
   {
     "anonymous": false,
@@ -108,23 +154,19 @@
         "internalType": "uint256",
         "name": "balance",
         "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "TBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "amtHash",
+        "type": "bytes32"
       }
     ],
     "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "donateToCampaign",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "endCampaign",
-    "outputs": [],
-    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
@@ -157,6 +199,16 @@
             "internalType": "uint256",
             "name": "balance",
             "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "TBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "amtHash",
+            "type": "bytes32"
           }
         ],
         "internalType": "struct ToBank.Charity",
@@ -165,24 +217,6 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "title",
-        "type": "string"
-      },
-      {
-        "internalType": "uint256",
-        "name": "deadline",
-        "type": "uint256"
-      }
-    ],
-    "name": "startCampaign",
-    "outputs": [],
-    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
@@ -202,13 +236,6 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "withdrawCampaignFunds",
-    "outputs": [],
-    "stateMutability": "nonpayable",
     "type": "function"
   }
 ]
